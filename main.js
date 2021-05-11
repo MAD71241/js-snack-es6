@@ -26,8 +26,16 @@ let listaBici = [
     }
 ];
 //Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
-[a, , , d] = listaBici;
-console.log(`Il peso minore tra le biciclette inserite nell'array appartiene a ${d.nome}, che ha un peso di: ${d.peso} grammi`);
+const [a, b, c, d] = listaBici;
+let weightArray = [];
+
+for (let i = 0; i < listaBici.length; i++) {
+    weightArray.push(listaBici[i].peso);
+}
+weightArray.sort;
+const weightLastItem = weightArray[weightArray.length - 1];
+
+console.log(`Il peso minore tra le biciclette inserite nell'array appartiene a ${d.nome}, che ha un peso di: ${weightLastItem} grammi`);
 
 /* SNACK2:
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà:
