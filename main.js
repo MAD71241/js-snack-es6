@@ -26,14 +26,14 @@ let listaBici = [
     }
 ];
 //Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
-const [a, b, c, d] = listaBici;
+const [a, b, c, d] = listaBici; 
 let weightArray = [];
 
 for (let i = 0; i < listaBici.length; i++) {
-    weightArray.push(listaBici[i].peso);
+    weightArray.push(listaBici[i].peso); //ciclo da cui ricavare un'array contenente solo il peso di ogni bici.
 }
-weightArray.sort;
-const weightLastItem = weightArray[weightArray.length - 1];
+weightArray.sort; //ordino i componenti dell'array dal più pesante al più leggero
+const weightLastItem = weightArray[weightArray.length - 1]; //assegno ad una costante l'ultimo valore dell'array
 
 console.log(`Il peso minore tra le biciclette inserite nell'array appartiene a:
  ${d.nome};
