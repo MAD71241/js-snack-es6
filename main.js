@@ -35,7 +35,9 @@ for (let i = 0; i < listaBici.length; i++) {
 weightArray.sort;
 const weightLastItem = weightArray[weightArray.length - 1];
 
-console.log(`Il peso minore tra le biciclette inserite nell'array appartiene a ${d.nome}, che ha un peso di: ${weightLastItem} grammi`);
+console.log(`Il peso minore tra le biciclette inserite nell'array appartiene a:
+ ${d.nome};
+ peso: ${weightLastItem}g`);
 
 /* SNACK2:
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà:
