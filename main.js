@@ -94,3 +94,29 @@ for (let i = 0; i < serieA.length; i++) {
     finalStanding.push({nome, falli});
 }
 console.log(finalStanding);
+
+
+//SNACK 3
+/*
+Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
+La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
+ */
+
+let numberArray = [10, 20, 30, 40, 50];
+/* let newArray = []; */
+//versione classica
+function newArrGen(myArray, num1, num2) {
+    let newArray = [];
+    for (num1; num1 < num2; num1++)    
+    newArray.push(myArray[num1])
+    console.log(newArray);
+}
+newArrGen(numberArray, 0, 2);
+
+//versione con filter
+let newArray = numberArray.filter(function (element) {
+    let minEl = numberArray[0];
+    let maxEl = numberArray[1];
+    return element >= minEl && element <= maxEl;
+})
+console.log(newArray);
